@@ -40,8 +40,8 @@
 	"timeZone": "Asia/Ho_Chi_Minh",
 	"credentials": {
 		"gmailAccount": {
-			"email": "",
-			"clientId": "",
+			"email": "tmpem46753@tmpeml.com",
+			"clientId": "43506354569-dosqoutocgvap3se42mejjn89eeuv30r.apps.googleusercontent.com",
 			"clientSecret": "",
 			"refreshToken": "",
 			"apiKey": ""
@@ -49,9 +49,6 @@
 		"gRecaptcha": {
 			"siteKey": "",
 			"secretKey": ""
-		},
-		"facebook": {
-			"accessToken": "EAAFWx5mYYlQBOw4bXKmH2VfYyCKINxjV6uqSA5jabc2R0ZBzfZBOLN6yu2FZBPap0JiKZBK7n9yAZCOMPV5ekRLIZAIwxmpiT4uZAW53G02VFqgjlpz5Sz9FKNc45f1uYuZAYtpDyq1JKN1FGU8r0d6T4lyxyJTEGxGslTyj7Rc6dbQWELDfwV3DH46W2xKdbiCP1QVrOECX87XUBtBCCBgZD"
 		}
 	},
 	"dashBoard": {

@@ -117,56 +117,56 @@ module.exports = {
             onText: "تشغيل",
             offText: "إيقاف",
             onlyAdmin: "⚠️ | عذرًا، فقط المسؤولين يمكنهم استخدام هذه الميزة", 
-	  missingWords: "⚠️ | You haven't entered the banned words",
-			addedSuccess: "✅ | Added %1 banned words to the list",
-			alreadyExist: "❌ | %1 banned words already exist in the list before: %2",
-			tooShort: "⚠️ | %1 banned words cannot be added to the list because they are shorter than 2 characters: %2",
-			onlyAdmin2: "⚠️ | Only admins can delete banned words from the list",
-			missingWords2: "⚠️ | You haven't entered the words to delete",
-			deletedSuccess: "✅ | Deleted %1 banned words from the list",
-			notExist: "❌ | %1 banned words do not exist in the list before: %2",
-			emptyList: "⚠️ | The list of banned words in your group is currently empty",
-			badWordsList: "📑 | The list of banned words in your group: %1",
-			onlyAdmin3: "⚠️ | Only admins can %1 this feature",
-			turnedOnOrOff: "✅ | Banned words warning has been %1",
-			onlyAdmin4: "⚠️ | Only admins can delete banned words warning",
-			missingTarget: "⚠️ | You haven't entered user ID or tagged user",
-			notWarned: "⚠️ | User %1 has not been warned for banned words",
-			removedWarn: "✅ | User %1 | %2 has been removed 1 banned words warning",
-			warned: "⚠️ | Banned words \"%1\" have been detected in your message, if you continue to violate you will be kicked from the group.",
-			warned2: "⚠️ | Banned words \"%1\" have been detected in your message, you have violated 2 times and will be kicked from the group.",
-			needAdmin: "Bot needs admin privileges to kick banned members",
-			unwarned: "✅ | Removed banned words warning of user %1 | %2"
-		}
-	},
-	balance: {
-		description: "view your money or the money of the tagged person",
-		guide: "   {pn}: view your money\n   {pn} <@tag>: view the money of the tagged person",
-		text: {
-			money: "You have %1$",
-			moneyOf: "%1 has %2$"
-		}
-	},
-	batslap: {
-		description: "Batslap image",
-		text: {
-			noTag: "You must tag the person you want to slap"
-		}
-	},
-	busy: {
-		description: "turn on do not disturb mode, when you are tagged bot will notify",
-		guide: "   {pn} [empty | <reason>]: turn on do not disturb mode\n   {pn} off: turn off do not disturb mode",
-		text: {
-			turnedOff: "✅ | Do not disturb mode has been turned off",
-			turnedOn: "✅ | Do not disturb mode has been turned on",
-			turnedOnWithReason: "✅ | Do not disturb mode has been turned on with reason: %1",
-			alreadyOn: "User %1 is currently busy",
-			alreadyOnWithReason: "User %1 is currently busy with reason: %2"
-		}
-	},
-	callad: {
-		description: "send report, feedback, bug,... to admin bot",
-		guide: "   {pn} <message>",
+	   missingWords: "⚠️ | لم تدخل الكلمات المحظورة",
+            addedSuccess: "✅ | تمت إضافة %1 كلمات محظورة إلى القائمة",
+            alreadyExist: "❌ | %1 كلمات محظورة موجودة بالفعل في القائمة قبل: %2",
+            tooShort: "⚠️ | لا يمكن إضافة %1 كلمات محظورة إلى القائمة لأنها أقصر من حرفين: %2",
+            onlyAdmin2: "⚠️ | فقط المشرفين يمكنهم حذف الكلمات المحظورة من القائمة",
+            missingWords2: "⚠️ | لم تدخل الكلمات التي تريد حذفها",
+            deletedSuccess: "✅ | تم حذف %1 كلمات محظورة من القائمة",
+            notExist: "❌ | %1 كلمات محظورة غير موجودة في القائمة قبل: %2",
+            emptyList: "⚠️ | قائمة الكلمات المحظورة في مجموعتك فارغة حاليًا",
+            badWordsList: "📑 | قائمة الكلمات المحظورة في مجموعتك: %1",
+            onlyAdmin3: "⚠️ | فقط المشرفين يمكنهم %1 هذه الميزة",
+            turnedOnOrOff: "✅ | تم %1 تحذير الكلمات المحظورة",
+            onlyAdmin4: "⚠️ | فقط المشرفين يمكنهم حذف تحذير الكلمات المحظورة",
+            missingTarget: "⚠️ | لم تدخل معرف المستخدم أو المستخدم المضاف",
+            notWarned: "⚠️ | المستخدم %1 لم يتم تحذيره للكلمات المحظورة",
+            removedWarn: "✅ | تم إزالة تحذير الكلمات المحظورة عن المستخدم %1 | %2",
+            warned: "⚠️ | الكلمات المحظورة \"%1\" تم اكتشافها في رسالتك، إذا استمررت في الانتهاك سيتم طردك من المجموعة.",
+            warned2: "⚠️ | الكلمات المحظورة \"%1\" تم اكتشافها في رسالتك، لقد انتهكت مرتين وسيتم طردك من المجموعة.",
+            needAdmin: "البوت يحتاج إلى صلاحيات المشرف لطرد الأعضاء المحظورين",
+            unwarned: "✅ | تم إزالة تحذير الكلمات المحظورة عن المستخدم %1 | %2"
+        }
+    },
+    balance: {
+        description: "عرض أموالك أو أموال الشخص المشار إليه",
+        guide: "{pn}: عرض أموالك\n {pn} <@tag>: عرض أموال الشخص المشار إليه",
+        text: {
+            money: "لديك %1$",
+            moneyOf: "%1 لديه %2$"
+        }
+    },
+    batslap: {
+        description: "صورة الصفعة",
+        text: {
+            noTag: "يجب عليك الإشارة إلى الشخص الذي تريد صفعه"
+        }
+    },
+    busy: {
+        description: "تفعيل وضع عدم الإزعاج، عند الإشارة إليك سيتم إشعار البوت",
+        guide: "{pn} [فارغ | <السبب>]: تفعيل وضع عدم الإزعاج\n {pn} off: إيقاف وضع عدم الإزعاج",
+        text: {
+            turnedOff: "✅ | تم إيقاف وضع عدم الإزعاج",
+            turnedOn: "✅ | تم تفعيل وضع عدم الإزعاج",
+            turnedOnWithReason: "✅ | تم تفعيل وضع عدم الإزعاج بسبب: %1",
+            alreadyOn: "المستخدم %1 مشغول حاليًا",
+            alreadyOnWithReason: "المستخدم %1 مشغول حاليًا بسبب: %2"
+        }
+    },
+    callad: {
+        description: "إرسال تقرير، ملاحظات، خطأ،... إلى إدارة البوت",
+        guide: "{pn} <رسالة>", 
 		text: {
 			missingMessage: "Please enter the message you want to send to admin",
 			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",

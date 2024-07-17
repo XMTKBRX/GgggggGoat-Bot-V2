@@ -117,288 +117,289 @@ module.exports = {
             onText: "تشغيل",
             offText: "إيقاف",
             onlyAdmin: "⚠️ | عذرًا، فقط المسؤولين يمكنهم استخدام هذه الميزة", 
-	  missingWords: "⚠️ | لم تقم بإدخال الكلمات المحظورة",
-	  addedSuccess: "✅ | تمت إضافة %1 كلمات محظورة إلى القائمة",
-	alreadyExist: "❌ | الكلمات المحظورة %1 موجودة بالفعل في القائمة: %2",
-	tooShort: "⚠️ | الكلمات المحظورة %1 لا يمكن إضافتها لأنها أقل من حرفين: %2",
-onlyAdmin2: "⚠️ | يمكن للمسؤولين فقط حذف الكلمات المحظورة من القائمة",
-missingWords2: "⚠️ | لم تقم بإدخال الكلمات المراد حذفها",
-deletedSuccess: "✅ | تم حذف %1 كلمات محظورة من القائمة",
-notExist: "❌ | الكلمات المحظورة %1 غير موجودة في القائمة: %2",
-emptyList: "⚠️ | قائمة الكلمات المحظورة في مجموعتك فارغة حالياً",
-badWordsList: "📑 | قائمة الكلمات المحظورة في مجموعتك: %1",
-onlyAdmin3: "⚠️ | يمكن للمسؤولين فقط %1 هذه الميزة",
-turnedOnOrOff: "✅ | تم %1 تحذير الكلمات المحظورة",
-onlyAdmin4: "⚠️ | يمكن للمسؤولين فقط حذف تحذير الكلمات المحظورة",
-missingTarget: "⚠️ | لم تقم بإدخال معرف المستخدم أو المستخدم الذي تم الإشارة إليه",
-notWarned: "⚠️ | المستخدم %1 لم يتم تحذيره بشأن الكلمات المحظورة",
-removedWarn: "✅ | تم إزالة تحذير الكلمات المحظورة عن المستخدم %1 | %2",
-warned: "⚠️ | تم اكتشاف الكلمات المحظورة \"%1\" في رسالتك، إذا استمرت في الانتهاك، سيتم طردك من المجموعة.",
-warned2: "⚠️ | تم اكتشاف الكلمات المحظورة \"%1\" في رسالتك، لقد انتهكت مرتين وسيتم طردك من المجموعة.",
-needAdmin: "البوت يحتاج إلى صلاحيات المسؤول لطرد الأعضاء المحظورين",
-unwarned: "✅ | تم إزالة تحذير الكلمات المحظورة عن المستخدم %1 | %2"
+	  missingWords: "⚠️ | You haven't entered the banned words",
+			addedSuccess: "✅ | Added %1 banned words to the list",
+			alreadyExist: "❌ | %1 banned words already exist in the list before: %2",
+			tooShort: "⚠️ | %1 banned words cannot be added to the list because they are shorter than 2 characters: %2",
+			onlyAdmin2: "⚠️ | Only admins can delete banned words from the list",
+			missingWords2: "⚠️ | You haven't entered the words to delete",
+			deletedSuccess: "✅ | Deleted %1 banned words from the list",
+			notExist: "❌ | %1 banned words do not exist in the list before: %2",
+			emptyList: "⚠️ | The list of banned words in your group is currently empty",
+			badWordsList: "📑 | The list of banned words in your group: %1",
+			onlyAdmin3: "⚠️ | Only admins can %1 this feature",
+			turnedOnOrOff: "✅ | Banned words warning has been %1",
+			onlyAdmin4: "⚠️ | Only admins can delete banned words warning",
+			missingTarget: "⚠️ | You haven't entered user ID or tagged user",
+			notWarned: "⚠️ | User %1 has not been warned for banned words",
+			removedWarn: "✅ | User %1 | %2 has been removed 1 banned words warning",
+			warned: "⚠️ | Banned words \"%1\" have been detected in your message, if you continue to violate you will be kicked from the group.",
+			warned2: "⚠️ | Banned words \"%1\" have been detected in your message, you have violated 2 times and will be kicked from the group.",
+			needAdmin: "Bot needs admin privileges to kick banned members",
+			unwarned: "✅ | Removed banned words warning of user %1 | %2"
 		}
 	},
 	balance: {
-		description: "عرض رصيدك أو رصيد الشخص المشار إليه",
-		guide: "   {pn}: عرض رصيدك\n   {pn} <@tag>: عرض رصيد الشخص المشار إليه",
+		description: "view your money or the money of the tagged person",
+		guide: "   {pn}: view your money\n   {pn} <@tag>: view the money of the tagged person",
 		text: {
-			money: "لديك %1$",
-			moneyOf: "%1 لديه %2$"
+			money: "You have %1$",
+			moneyOf: "%1 has %2$"
 		}
 	},
 	batslap: {
-		description: "صورة الصفعة",
+		description: "Batslap image",
 		text: {
-			noTag: "يجب عليك الإشارة إلى الشخص الذي تريد صفعه"
+			noTag: "You must tag the person you want to slap"
 		}
 	},
 	busy: {
-		description: "تشغيل وضع عدم الإزعاج، عندما يتم الإشارة إليك سيقوم البوت بإشعار الآخرين",
-		guide: "   {pn} [فارغ | <سبب>]: تشغيل وضع عدم الإزعاج\n   {pn} off: إيقاف وضع عدم الإزعاج",
+		description: "turn on do not disturb mode, when you are tagged bot will notify",
+		guide: "   {pn} [empty | <reason>]: turn on do not disturb mode\n   {pn} off: turn off do not disturb mode",
 		text: {
-			turnedOff: "✅ | تم إيقاف وضع عدم الإزعاج",
-			turnedOn: "✅ | تم تشغيل وضع عدم الإزعاج",
-			turnedOnWithReason: "✅ | تم تشغيل وضع عدم الإزعاج بسبب: %1",
-			alreadyOn: "المستخدم %1 مشغول حالياً",
-			alreadyOnWithReason: "المستخدم %1 مشغول حالياً بسبب: %2"
+			turnedOff: "✅ | Do not disturb mode has been turned off",
+			turnedOn: "✅ | Do not disturb mode has been turned on",
+			turnedOnWithReason: "✅ | Do not disturb mode has been turned on with reason: %1",
+			alreadyOn: "User %1 is currently busy",
+			alreadyOnWithReason: "User %1 is currently busy with reason: %2"
 		}
 	},
 	callad: {
-		description: "إرسال تقرير، ملاحظات، خطأ،... إلى مسؤول البوت",
-		guide: "   {pn} <رسالة>",
+		description: "send report, feedback, bug,... to admin bot",
+		guide: "   {pn} <message>",
 		text: {
-			missingMessage: "الرجاء إدخال الرسالة التي تريد إرسالها إلى المسؤول",
-			sendByGroup: "\n- تم الإرسال من المجموعة: %1\n- معرف المجموعة: %2",
-			sendByUser: "\n- تم الإرسال من المستخدم",
-			content: "\n\nالمحتوى:\n─────────────────\n%1\n─────────────────\nرد على هذه الرسالة لإرسال رسالة إلى المستخدم",
-			success: "تم إرسال رسالتك إلى المسؤول بنجاح!",
-			reply: "📍 رد من المسؤول %1:\n─────────────────\n%2\n─────────────────\nرد على هذه الرسالة للاستمرار في إرسال الرسائل إلى المسؤول",
-			replySuccess: "تم إرسال ردك إلى المسؤول بنجاح!",
-			feedback: "📝 ملاحظات من المستخدم %1:\n- معرف المستخدم: %2%3\n\nالمحتوى:\n─────────────────\n%4\n─────────────────\nرد على هذه الرسالة لإرسال رسالة إلى المستخدم",
-			replyUserSuccess: "تم إرسال ردك إلى المستخدم بنجاح!"
+			missingMessage: "Please enter the message you want to send to admin",
+			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
+			sendByUser: "\n- Sent from user",
+			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
+			success: "Sent your message to admin successfully!",
+			reply: "📍 Reply from admin %1:\n─────────────────\n%2\n─────────────────\nReply this message to continue send message to admin",
+			replySuccess: "Sent your reply to admin successfully!",
+			feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n─────────────────\n%4\n─────────────────\nReply this message to send message to user",
+			replyUserSuccess: "Sent your reply to user successfully!"
 		}
 	},
 	cmd: {
-		description: "إدارة ملفات الأوامر الخاصة بك",
-		guide: "{pn} load <اسم ملف الأمر>\n{pn} loadAll\n{pn} install <رابط> <اسم ملف الأمر>: تحميل وتثبيت ملف أمر من رابط، الرابط هو مسار الملف (خام)",
+		description: "Manage your command files",
+		guide: "{pn} load <command file name>\n{pn} loadAll\n{pn} install <url> <command file name>: Download and install a command file from a url, url is the path to the file (raw)",
 		text: {
-			missingFileName: "⚠️ | الرجاء إدخال اسم الأمر الذي تريد إعادة تحميله",
-			loaded: "✅ | تم تحميل الأمر \"%1\" بنجاح",
-			loadedError: "❌ | فشل تحميل الأمر \"%1\" بالخطأ\n%2: %3",
-			loadedSuccess: "✅ | تم تحميل الأمر \"%1\" بنجاح",
-			loadedFail: "❌ | فشل تحميل الأمر \"%1\"\n%2",
-			missingCommandNameUnload: "⚠️ | الرجاء إدخال اسم الأمر الذي تريد إلغاء تحميله",
-			unloaded: "✅ | تم إلغاء تحميل الأمر \"%1\" بنجاح",
-			unloadedError: "❌ | فشل إلغاء تحميل الأمر \"%1\" بالخطأ\n%2: %3",
-			missingUrlCodeOrFileName: "⚠️ | الرجاء إدخال الرابط أو الرمز واسم ملف الأمر الذي تريد تثبيته",
-			missingUrlOrCode: "⚠️ | الرجاء إدخال الرابط أو الرمز لملف الأمر الذي تريد تثبيته",
-			missingFileNameInstall: "⚠️ | الرجاء إدخال اسم الملف لحفظ الأمر (بامتداد .js)",
-			invalidUrlOrCode: "⚠️ | غير قادر على الحصول على رمز الأمر",
-			alreadExist: "⚠️ | ملف الأمر موجود بالفعل، هل تريد بالتأكيد استبدال ملف الأمر القديم؟\nتفاعل مع هذه الرسالة للمتابعة",
-			installed: "✅ | تم تثبيت الأمر \"%1\" بنجاح، تم حفظ ملف الأمر في %2",
-			installedError: "❌ | فشل تثبيت الأمر \"%1\" بالخطأ\n%2: %3",
-			missingFile: "⚠️ | ملف الأمر \"%1\" غير موجود",
-			invalidFileName: "⚠️ | اسم ملف الأمر غير صالح",
-			unloadedFile: "✅ | تم إلغاء تحميل الأمر \"%1\""
+			missingFileName: "⚠️ | Please enter the command name you want to reload",
+			loaded: "✅ | Loaded command \"%1\" successfully",
+			loadedError: "❌ | Failed to load command \"%1\" with error\n%2: %3",
+			loadedSuccess: "✅ | Loaded successfully \"%1\" command",
+			loadedFail: "❌ | Failed to load \"%1\" command\n%2",
+			missingCommandNameUnload: "⚠️ | Please enter the command name you want to unload",
+			unloaded: "✅ | Unloaded command \"%1\" successfully",
+			unloadedError: "❌ | Failed to unload command \"%1\" with error\n%2: %3",
+			missingUrlCodeOrFileName: "⚠️ | Please enter the url or code and command file name you want to install",
+			missingUrlOrCode: "⚠️ | Please enter the url or code of the command file you want to install",
+			missingFileNameInstall: "⚠️ | Please enter the file name to save the command (with .js extension)",
+			invalidUrlOrCode: "⚠️ | Unable to get command code",
+			alreadExist: "⚠️ | The command file already exists, are you sure you want to overwrite the old command file?\nReact to this message to continue",
+			installed: "✅ | Installed command \"%1\" successfully, the command file is saved at %2",
+			installedError: "❌ | Failed to install command \"%1\" with error\n%2: %3",
+			missingFile: "⚠️ | Command file \"%1\" not found",
+			invalidFileName: "⚠️ | Invalid command file name",
+			unloadedFile: "✅ | Unloaded command \"%1\""
 		}
 	},
 	count: {
-		description: "عرض عدد الرسائل لجميع الأعضاء أو لنفسك (منذ انضمام البوت إلى المجموعة)",
-		guide: "   {pn}: يستخدم لعرض عدد رسائلك\n   {pn} @tag: يستخدم لعرض عدد رسائل الأشخاص المشار إليهم\n   {pn} all: يستخدم لعرض عدد رسائل جميع الأعضاء",
+		description: "View the number of messages of all members or yourself (since the bot joined the group)",
+		guide: "   {pn}: used to view the number of messages of you\n   {pn} @tag: used to view the number of messages of those tagged\n   {pn} all: used to view the number of messages of all members",
 		text: {
-			count: "عدد رسائل الأعضاء:",
-			endMessage: "الأشخاص الذين ليس لديهم اسم في القائمة لم يرسلوا أي رسائل.",
-			page: "الصفحة [%1/%2]",
-			reply: "رد على هذه الرسالة برقم الصفحة لعرض المزيد",
-			result: "%1 المرتبة %2 بعدد %3 رسائل",
-			yourResult: "أنت في المرتبة %1 وقد أرسلت %2 رسائل في هذه المجموعة",
-			invalidPage: "رقم الصفحة غير صالح"
+			count: "Number of messages of members:",
+			endMessage: "Those who do not have a name in the list have not sent any messages.",
+			page: "Page [%1/%2]",
+			reply: "Reply to this message with the page number to view more",
+			result: "%1 rank %2 with %3 messages",
+			yourResult: "You are ranked %1 and have sent %2 messages in this group",
+			invalidPage: "Invalid page number"
 		}
 	},
 	customrankcard: {
-		description: "تصميم بطاقة الترتيب الخاصة بك",
+		description: "Design rank card by your own",
 		guide: {
 			body: "   {pn} [maincolor | subcolor | linecolor | progresscolor | alphasubcolor | textcolor | namecolor | expcolor | rankcolor | levelcolor | reset] <value>"
-				+ "\n   حيث: "
-				+ "\n  + maincolor | background <value>: الخلفية الرئيسية لبطاقة الترتيب"
-				+ "\n  + subcolor <value>: الخلفية الفرعية"
-				+ "\n  + linecolor <value>: لون الخط بين الخلفية الرئيسية والفرعية"
-				+ "\n  + expbarcolor <value>: لون شريط الخبرة"
-				+ "\n  + progresscolor <value>: لون شريط الخبرة الحالي"
-				+ "\n  + alphasubcolor <value>: شفافية الخلفية الفرعية (من 0 إلى 1)"
-				+ "\n  + textcolor <value>: لون النص (رمز سداسي عشري أو rgba)"
-				+ "\n  + namecolor <value>: لون الاسم"
-				+ "\n  + expcolor <value>: لون الخبرة"
-				+ "\n  + rankcolor <value>: لون الترتيب"
-				+ "\n  + levelcolor <value>: لون المستوى"
-				+ "\n    • <value> يمكن أن يكون رمز لون سداسي عشري، rgb، rgba، تدرج (كل لون مفصول بمسافة) أو رابط صورة"
-				+ "\n    • إذا كنت ترغب في استخدام تدرج، يرجى إدخال العديد من الألوان مفصولة بمسافة"
-				+ "\n   {pn} reset: إعادة تعيين جميع الإعدادات إلى الافتراضي"
-				+ "\n   مثال:"
+				+ "\n   In which: "
+				+ "\n  + maincolor | background <value>: main background of rank card"
+				+ "\n  + subcolor <value>: sub background"
+				+ "\n  + linecolor <value>: color of line between main and sub background"
+				+ "\n  + expbarcolor <value>: color of exp bar"
+				+ "\n  + progresscolor <value>: color of current exp bar"
+				+ "\n  + alphasubcolor <value>: opacity of sub background (from 0 -> 1)"
+				+ "\n  + textcolor <value>: color of text (hex color or rgba)"
+				+ "\n  + namecolor <value>: color of name"
+				+ "\n  + expcolor <value>: color of exp"
+				+ "\n  + rankcolor <value>: color of rank"
+				+ "\n  + levelcolor <value>: color of level"
+				+ "\n    • <value> can be hex color, rgb, rgba, gradient (each color is separated by space) or image url"
+				+ "\n    • If you want to use gradient, please enter many colors separated by space"
+				+ "\n   {pn} reset: reset all to default"
+				+ "\n   Example:"
 				+ "\n    {pn} maincolor #fff000"
 				+ "\n    {pn} subcolor rgba(255,136,86,0.4)"
 				+ "\n    {pn} reset",
 			attachment: {
-				["${process.cwd()}/scripts/cmds/assets/guide/customrankcard_1.jpg"]: "https://i.ibb.co/BZ2Qgs1/image.png",
-				["${process.cwd()}/scripts/cmds/assets/guide/customrankcard_2.png"]: "https://i.ibb.co/wy1ZHHL/image.png"
+				[`${process.cwd()}/scripts/cmds/assets/guide/customrankcard_1.jpg`]: "https://i.ibb.co/BZ2Qgs1/image.png",
+				[`${process.cwd()}/scripts/cmds/assets/guide/customrankcard_2.png`]: "https://i.ibb.co/wy1ZHHL/image.png"
 			}
 		},
 		text: {
-			invalidImage: "رابط صورة غير صالح، يرجى اختيار رابط يؤدي إلى صورة (jpg، jpeg، png، gif)، يمكنك تحميل الصورة إلى https://imgbb.com/ واختيار \"الحصول على الرابط المباشر\" للحصول على رابط الصورة",
-			invalidAttachment: "مرفق غير صالح، يرجى اختيار ملف صورة",
-			invalidColor: "رمز لون غير صالح، يرجى اختيار رمز لون سداسي عشري (6 أرقام) أو رمز لون rgba",
-			notSupportImage: "عنوان الصورة غير مدعوم بالخيار \"%1\"",
-success: "تم حفظ التغييرات الخاصة بك، هنا معاينة",
-reseted: "تم إعادة تعيين جميع الإعدادات إلى الوضع الافتراضي",
-invalidAlpha: "يرجى اختيار رقم من 0 إلى 1"
-},
-dhbc: {
-description: "لعبة امسك الكلمة، اللاعب", 
-guide: "{pn}",
-text: {
-reply: "يرجى الرد على هذه الرسالة بالإجابة\n%1",
-isSong: "هذا هو اسم الأغنية للمغني %1",
-notPlayer: "⚠️ أنت لست اللاعب لهذا السؤال",
-correct: "🎉 تهانينا، لقد أجبت بشكل صحيح وحصلت على %1$",
-wrong: "⚠️ لقد أجبت بشكل غير صحيح"
-}
-},
-emojimix: {
-description: "دمج 2 رموز تعبيرية معًا",
-guide: "   {pn} <emoji1> <emoji2>\n   مثال:  {pn} 🤣 🥰"
-},
-eval: {
-description: "اختبار الكود بسرعة",
-guide: "{pn} <الكود لاختباره>",
-text: {
-error: "❌ حدث خطأ:"
-}
-},
-event: {
-description: "إدارة ملفات أوامر الحدث الخاصة بك",
-guide: "{pn} load <اسم ملف الأمر>\n{pn} loadAll\n{pn} install <url> <اسم ملف الأمر>: تنزيل وتحميل أمر الحدث، url هو المسار إلى ملف الأمر (raw)",
-text: {
-missingFileName: "⚠️ | يرجى إدخال اسم الأمر الذي تريد إعادة تحميله",
-loaded: "✅ | تم تحميل أمر الحدث \"%1\" بنجاح",
-loadedError: "❌ | فشل تحميل أمر الحدث \"%1\" مع الخطأ\n%2: %3",
-loadedSuccess: "✅ | تم تحميل أمر الحدث \"%1\" بنجاح",
-loadedFail: "❌ | فشل تحميل أمر الحدث \"%1\"\n%2",
-missingCommandNameUnload: "⚠️ | يرجى إدخال اسم الأمر الذي تريد إلغاء تحميله",
-unloaded: "✅ | تم إلغاء تحميل أمر الحدث \"%1\" بنجاح",
-unloadedError: "❌ | فشل إلغاء تحميل أمر الحدث \"%1\" مع الخطأ\n%2: %3",
-missingUrlCodeOrFileName: "⚠️ | يرجى إدخال url أو الكود واسم ملف الأمر الذي تريد تثبيته",
-missingUrlOrCode: "⚠️ | يرجى إدخال url أو كود ملف الأمر الذي تريد تثبيته",
-missingFileNameInstall: "⚠️ | يرجى إدخال اسم الملف لحفظ الأمر (بامتداد .js)",
-invalidUrlOrCode: "⚠️ | غير قادر على الحصول على كود الأمر",
-alreadExist: "⚠️ | ملف الأمر موجود بالفعل، هل أنت متأكد أنك تريد الكتابة فوق ملف الأمر القديم؟\nتفاعل مع هذه الرسالة للمتابعة",
-installed: "✅ | تم تثبيت أمر الحدث \"%1\" بنجاح، ملف الأمر محفوظ في %2",
-installedError: "❌ | فشل تثبيت أمر الحدث \"%1\" مع الخطأ\n%2: %3",
-missingFile: "⚠️ | الملف \"%1\" غير موجود",
-invalidFileName: "⚠️ | اسم الملف غير صالح",
-unloadedFile: "✅ | تم إلغاء تحميل الأمر \"%1\""
-}
-},
-filteruser: {
-description: "تصفية أعضاء المجموعة حسب عدد الرسائل أو الحسابات المقفولة",
-guide: "   {pn} [<عدد الرسائل> | die]",
-text: {
-needAdmin: "⚠️ | يرجى إضافة البوت كمسؤول مجموعة لاستخدام هذا الأمر",
-confirm: "⚠️ | هل أنت متأكد أنك تريد حذف أعضاء المجموعة الذين لديهم أقل من %1 رسالة؟\nتفاعل مع هذه الرسالة للتأكيد",
-kickByBlock: "✅ | تم حذف %1 أعضاء لديهم حسابات مقفولة بنجاح",
-kickByMsg: "✅ | تم حذف %1 أعضاء لديهم أقل من %2 رسائل بنجاح",
-kickError: "❌ | حدث خطأ ولم يتمكن من طرد %1 أعضاء:\n%2",
-noBlock: "✅ | لا يوجد أعضاء لديهم حسابات مقفولة",
-noMsg: "✅ | لا يوجد أعضاء لديهم أقل من %1 رسالة"
-}
-},
-getfbstate: {
-description: "الحصول على حالة fbstate الحالية",
-guide: "{pn}",
-text: {
-success: "تم إرسال حالة fbstate إليك، يرجى التحقق من رسالة خاصة من البوت"
-}
-},
-grouptag: {
-description: "وضع علامة للأعضاء حسب المجموعة",
-guide: "   {pn} add <groupTagName> <@tags>: لاستخدام إضافة علامة مجموعة جديدة أو إضافة أعضاء إلى علامة المجموعة\n   مثال:\n    {pn} TEAM1 @tag1 @tag2\n\n   {pn} del <groupTagName> <@tags>: لاستخدام إزالة أعضاء من علامة المجموعة\n   مثال:\n    {pn} del TEAM1 @tag1 @tag2\n\n   {pn} remove <groupTagName>: لاستخدام إزالة علامة المجموعة\n   مثال:\n    {pn} remove TEAM1\n\n   {pn} rename <groupTagName> | <newGroupTagName>: لاستخدام إعادة تسمية علامة المجموعة\n\n   {pn} [list | all]: لاستخدام عرض قائمة علامات المجموعة في دردشة مجموعتك\n\n   {pn} info <groupTagName>: لاستخدام عرض معلومات علامة المجموعة",
-text: {
-noGroupTagName: "يرجى إدخال اسم علامة المجموعة",
-noMention: "لم تقم بتعليم أي عضو للإضافة إلى علامة المجموعة",
-addedSuccess: "تمت إضافة الأعضاء:\n%1\nإلى علامة المجموعة \"%2\"",
-addedSuccess2: "تمت إضافة علامة المجموعة \"%1\" بالأعضاء:\n%2",
-existedInGroupTag: "الأعضاء:\n%1\nموجودون بالفعل في علامة المجموعة \"%2\"",
-notExistedInGroupTag: "الأعضاء:\n%1\nلا يوجدون في علامة المجموعة \"%2\"",
-noExistedGroupTag: "علامة المجموعة \"%1\" لا توجد في دردشة مجموعتك",
-noExistedGroupTag2: "لم تقم دردشة مجموعتك بإضافة أي علامة مجموعة",
-noMentionDel: "يرجى وضع علامة على الأعضاء لإزالتهم من علامة المجموعة \"%1\"",
-deletedSuccess: "تم حذف الأعضاء:\n%1\nمن علامة المجموعة \"%2\"",
-deletedSuccess2: "تم حذف علامة المجموعة \"%1\"",
-tagged: "وضع علامة للمجموعة \"%1\":\n%2",
-noGroupTagName2: "يرجى إدخال اسم علامة المجموعة القديمة واسم علامة المجموعة الجديدة، مفصولين بـ \"|\"",
-renamedSuccess: "تمت إعادة تسمية علامة المجموعة \"%1\" إلى \"%2\"",
-infoGroupTag: "📑 | اسم المجموعة: \"%1\"\n👥 | عدد الأعضاء: %2\n👨‍👩‍👧‍👦 | قائمة الأعضاء:\n %3"
-}
-},
-help: {
-description: "عرض كيفية استخدام الأوامر",
-guide: "{pn} [فارغ | <رقم الصفحة> | <اسم الأمر>]",
-text: {
-help: "╭─────────────⭓\n%1\n├─────⭔\n│ الصفحة [ %2/%3 ]\n│ حاليًا، يحتوي البوت على %4 أوامر يمكن استخدامها\n│ » اكتب %5help <الصفحة> لعرض قائمة الأوامر\n│ » اكتب %5help لعرض تفاصيل كيفية استخدام ذلك الأمر\n├────────⭔\n│ %6\n╰─────────────⭓",
-help2: "%1├───────⭔\n│ » حاليًا، يحتوي البوت على %2 أوامر يمكن استخدامها\n│ » اكتب %3help <اسم الأمر> لعرض تفاصيل كيفية استخدام ذلك الأمر\n│ %4\n╰─────────────⭓",
-commandNotFound: "الأمر \"%1\" غير موجود",
-getInfoCommand: "╭── الاسم ────⭓\n│ %1\n├── المعلومات\n│ الوصف: %2\n│ أسماء أخرى: %3\n│ أسماء أخرى في مجموعتك: %4\n│ الإصدار: %5\n│ الدور: %6\n│ الوقت لكل أمر: %7 ثانية\n│ المؤلف: %8\n├── الاستخدام\n%9\n├── الملاحظات\n│ يمكن تغيير المحتوى داخل <XXXXX>\n│ المحتوى داخل [a|b|c] هو a أو b أو c\n╰──────⭔",
-doNotHave: "لا يملك",
-roleText0: "0 (جميع المستخدمين)",
-roleText1: "1 (مسؤولو المجموعة)",
-roleText2: "2 (مشرف البوت)",
-roleText0setRole: "0 (تعيين الدور، جميع المستخدمين)",
-roleText1setRole: "1 (تعيين الدور، مسؤولو المجموعة)",
-pageNotFound: "الصفحة %1 غير موجودة"
-}
-},
-kick: {
-description: "طرد عضو من الدردشة",
-guide: "{pn} @tags: لاستخدام طرد الأعضاء الذين تم وضع علامة عليهم"
-},
-loadconfig: {
-description: "إعادة تحميل إعدادات البوت"
-},
-moon: {
-description: "عرض صورة القمر في الليلة التي تختارها (يوم/شهر/سنة)",
-guide: "  {pn} <يوم/شهر/سنة>\n   {pn} <يوم/شهر/سنة> <عنوان>",
-text: {
-invalidDateFormat: "يرجى إدخال تاريخ صالح بتنسيق DD/MM/YYYY",
-error: "حدث خطأ أثناء الحصول على صورة القمر لـ %1",
-invalidDate: "%1 ليس تاريخًا صالحًا",
-caption: "- صورة القمر في %1"
-}
-},
-notification: {
-description: "إرسال إشعار من المشرف إلى جميع المجموعات",
-guide: "{pn} <الرسالة>",
-text: {
-missingMessage: "يرجى إدخال الرسالة التي تريد إرسالها إلى جميع المجموعات",
-notification: "إشعار من مشرف البوت إلى جميع مجموعات الدردشة (لا ترد على هذه الرسالة)",
-sendingNotification: "بدء إرسال إشعار من مشرف البوت إلى %1 مجموعة دردشة",
-sentNotification: "✅ تم إرسال الإشعار إلى %1 مجموعة بنجاح",
-errorSendingNotification: "حدث خطأ أثناء الإرسال إلى %1 مجموعة:\n %2"
-}
-},
-prefix: {
-description: "تغيير علامة الأوامر في دردشتك أو نظام البوت بالكامل (للمشرفين فقط)",
-guide: "   {pn} <علامة جديدة>: تغيير علامة الأوامر في دردشتك\n   مثال:\n    {pn} #\n\n   {pn} <علامة جديدة> -g: تغيير علامة الأوامر في نظام البوت (للمشرفين فقط)\n   مثال:\n    {pn} # -g\n\n   {pn} reset: إعادة تعيين علامة الأوامر في دردشتك إلى الوضع الافتراضي",
-text: {
-reset: "تم إعادة تعيين علامتك إلى الوضع الافتراضي: %1",
-onlyAdmin: "فقط المشرفين يمكنهم تغيير علامة الأوامر لنظام البوت",
-confirmGlobal: "يرجى التفاعل مع هذه الرسالة لتأكيد تغيير علامة الأوامر لنظام البوت",
-confirmThisThread: "يرجى التفاعل مع هذه الرسالة لتأكيد تغيير علامة الأوامر في دردشتك",
-successGlobal: "تم تغيير علامة الأوامر لنظام البوت إلى: %1",
-successThisThread: "تم تغيير علامة الأوامر في دردشتك إلى: %1",
-myPrefix: "🌐 علامة النظام: %1\n🛸 علامة دردشتك: %2"
-}
-},
-rank: {
+			invalidImage: "Invalid image url, please choose an url with image destination (jpg, jpeg, png, gif), you can upload image to https://imgbb.com/ and choose \"get direct link\" to get image url",
+			invalidAttachment: "Invalid attachment, please choose an image file",
+			invalidColor: "Invalid color code, please choose a hex color code (6 digits) or rgba color code",
+			notSupportImage: "Url image is not supported with option \"%1\"",
+			success: "Your changes have been saved, here is a preview",
+			reseted: "All settings have been reset to default",
+			invalidAlpha: "Please choose a number from 0 -> 1"
+		}
+	},
+	dhbc: {
+		description: "play game catch the word",
+		guide: "{pn}",
+		text: {
+			reply: "Please reply this message with the answer\n%1",
+			isSong: "This is the name of the song of the singer %1",
+			notPlayer: "⚠️ You are not the player of this question",
+			correct: "🎉 Congratulations you have answered correctly and received %1$",
+			wrong: "⚠️ You have answered incorrectly"
+		}
+	},
+	emojimix: {
+		description: "Mix 2 emoji together",
+		guide: "   {pn} <emoji1> <emoji2>\n   Example:  {pn} 🤣 🥰"
+	},
+	eval: {
+		description: "Test code quickly",
+		guide: "{pn} <code to test>",
+		text: {
+			error: "❌ An error occurred:"
+		}
+	},
+	event: {
+		description: "Manage your event command files",
+		guide: "{pn} load <command file name>\n{pn} loadAll\n{pn} install <url> <command file name>: Download and load event command, url is the path to the command file (raw)",
+		text: {
+			missingFileName: "⚠️ | Please enter the command name you want to reload",
+			loaded: "✅ | Loaded event command \"%1\" successfully",
+			loadedError: "❌ | Loaded event command \"%1\" failed with error\n%2: %3",
+			loadedSuccess: "✅ | Loaded \"%1\" event command successfully",
+			loadedFail: "❌ | Loaded event command \"%1\" failed\n%2",
+			missingCommandNameUnload: "⚠️ | Please enter the command name you want to unload",
+			unloaded: "✅ | Unloaded event command \"%1\" successfully",
+			unloadedError: "❌ | Unloaded event command \"%1\" failed with error\n%2: %3",
+			missingUrlCodeOrFileName: "⚠️ | Please enter the url or code and command file name you want to install",
+			missingUrlOrCode: "⚠️ | Please enter the url or code of the command file you want to install",
+			missingFileNameInstall: "⚠️ | Please enter the file name to save the command (with .js extension)",
+			invalidUrlOrCode: "⚠️ | Unable to get command code",
+			alreadExist: "⚠️ | The command file already exists, are you sure you want to overwrite the old command file?\nReact to this message to continue",
+			installed: "✅ | Installed event command \"%1\" successfully, the command file is saved at %2",
+			installedError: "❌ | Installed event command \"%1\" failed with error\n%2: %3",
+			missingFile: "⚠️ | File \"%1\" not found",
+			invalidFileName: "⚠️ | Invalid file name",
+			unloadedFile: "✅ | Unloaded command \"%1\""
+		}
+	},
+	filteruser: {
+		description: "filter group members by number of messages or locked account",
+		guide: "   {pn} [<number of messages> | die]",
+		text: {
+			needAdmin: "⚠️ | Please add the bot as a group admin to use this command",
+			confirm: "⚠️ | Are you sure you want to delete group members with less than %1 messages?\nReact to this message to confirm",
+			kickByBlock: "✅ | Successfully deleted %1 members who are locked acc",
+			kickByMsg: "✅ | Successfully deleted %1 members with less than %2 messages",
+			kickError: "❌ | An error occurred and could not kick %1 members:\n%2",
+			noBlock: "✅ | There are no members who are locked acc",
+			noMsg: "✅ | There are no members with less than %1 messages"
+		}
+	},
+	getfbstate: {
+		description: "Get current fbstate",
+		guide: "{pn}",
+		text: {
+			success: "Sent fbstate to you, please check bot's private message"
+		}
+	},
+	grouptag: {
+		description: "Tag members by group",
+		guide: "   {pn} add <groupTagName> <@tags>: use to add new group tag or add members to group tag\n   Example:\n    {pn} TEAM1 @tag1 @tag2\n\n   {pn} del <groupTagName> <@tags>: use to remove members from group tag\n   Example:\n    {pn} del TEAM1 @tag1 @tag2\n\n   {pn} remove <groupTagName>: use to remove group tag\n   Example:\n    {pn} remove TEAM1\n\n   {pn} rename <groupTagName> | <newGroupTagName>: use to rename group tag\n\n   {pn} [list | all]: use to view list of group tag in your group chat\n\n   {pn} info <groupTagName>: use to view info of group tag",
+		text: {
+			noGroupTagName: "Please enter group tag name",
+			noMention: "You haven't tagged any member to add to group tag",
+			addedSuccess: "Added members:\n%1\nto group tag \"%2\"",
+			addedSuccess2: "Added group tag \"%1\" with members:\n%2",
+			existedInGroupTag: "Members:\n%1\nalready existed in group tag \"%2\"",
+			notExistedInGroupTag: "Members:\n%1\ndoesn't exist in group tag \"%2\"",
+			noExistedGroupTag: "Group tag \"%1\" doesn't exist in your group chat",
+			noExistedGroupTag2: "Your group chat hasn't added any group tag",
+			noMentionDel: "Please tag members to remove from group tag \"%1\"",
+			deletedSuccess: "Deleted members:\n%1\nfrom group tag \"%2\"",
+			deletedSuccess2: "Deleted group tag \"%1\"",
+			tagged: "Tag group \"%1\":\n%2",
+			noGroupTagName2: "Please enter old group tag name and new group tag name, separated by \"|\"",
+			renamedSuccess: "Renamed group tag \"%1\" to \"%2\"",
+			infoGroupTag: "📑 | Group name: \"%1\"\n👥 | Number of members: %2\n👨‍👩‍👧‍👦 | List of members:\n %3"
+		}
+	},
+	help: {
+		description: "View command usage",
+		guide: "{pn} [empty | <page number> | <command name>]",
+		text: {
+			help: "╭─────────────⭓\n%1\n├─────⭔\n│ Page [ %2/%3 ]\n│ Currently, the bot has %4 commands that can be used\n│ » Type %5help <page> to view the command list\n│ » Type %5help to view the details of how to use that command\n├────────⭔\n│ %6\n╰─────────────⭓",
+			help2: "%1├───────⭔\n│ » Currently, the bot has %2 commands that can be used\n│ » Type %3help <command name> to view the details of how to use that command\n│ %4\n╰─────────────⭓",
+			commandNotFound: "Command \"%1\" does not exist",
+			getInfoCommand: "╭── NAME ────⭓\n│ %1\n├── INFO\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n├── Usage\n%9\n├── Notes\n│ The content inside <XXXXX> can be changed\n│ The content inside [a|b|c] is a or b or c\n╰──────⭔",
+			doNotHave: "Do not have",
+			roleText0: "0 (All users)",
+			roleText1: "1 (Group administrators)",
+			roleText2: "2 (Admin bot)",
+			roleText0setRole: "0 (set role, all users)",
+			roleText1setRole: "1 (set role, group administrators)",
+			pageNotFound: "Page %1 does not exist"
+		}
+	},
+	kick: {
+		description: "Kick member out of chat box",
+		guide: "{pn} @tags: use to kick members who are tagged"
+	},
+	loadconfig: {
+		description: "Reload config of bot"
+	},
+	moon: {
+		description: "view moon image on the night you choose (dd/mm/yyyy)",
+		guide: "  {pn} <day/month/year>\n   {pn} <day/month/year> <caption>",
+		text: {
+			invalidDateFormat: "Please enter a valid date in DD/MM/YYYY format",
+			error: "An error occurred while getting the moon image of %1",
+			invalidDate: "%1 is not a valid date",
+			caption: "- Moon image on %1"
+		}
+	},
+	notification: {
+		description: "Send notification from admin to all box",
+		guide: "{pn} <tin nhắn>",
+		text: {
+			missingMessage: "Please enter the message you want to send to all groups",
+			notification: "Notification from admin bot to all chat groups (do not reply to this message)",
+			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
+			sentNotification: "✅ Sent notification to %1 groups successfully",
+			errorSendingNotification: "An error occurred while sending to %1 groups:\n %2"
+		}
+	},
+	prefix: {
+		description: "Thay đổi dấu lệnh của bot trong box chat của bạn hoặc cả hệ thống bot (chỉ admin bot)",
+		guide: "   {pn} <new prefix>: change new prefix in your box chat\n   Example:\n    {pn} #\n\n   {pn} <new prefix> -g: change new prefix in system bot (only admin bot)\n   Example:\n    {pn} # -g\n\n   {pn} reset: change prefix in your box chat to default",
+		text: {
+			reset: "Your prefix has been reset to default: %1",
+			onlyAdmin: "Only admin can change prefix of system bot",
+			confirmGlobal: "Please react to this message to confirm change prefix of system bot",
+			confirmThisThread: "Please react to this message to confirm change prefix in your box chat",
+			successGlobal: "Changed prefix of system bot to: %1",
+			successThisThread: "Changed prefix in your box chat to: %1",
+			myPrefix: "🌐 System prefix: %1\n🛸 Your box chat prefix: %2"
+		}
+	},
+	rank: {
 		description: "View your level or the level of the tagged person. You can tag many people"
 	},
 	rankup: {

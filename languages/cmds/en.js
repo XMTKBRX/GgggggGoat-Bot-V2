@@ -2,7 +2,7 @@ module.exports = {
 	// You can customize the language here or directly in the command files
 	onlyadminbox: {
 		description: "turn on/off only admin box can use bot",
-		guide: "   {pn} [on | off]",
+		guide: "   {pn} [تشغيل | ايقاف]",
 		text: {
 			turnedOn: "Turned on the mode only admin of group can use bot",
 			turnedOff: "Turned off the mode only admin of group can use bot",

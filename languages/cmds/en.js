@@ -1,32 +1,30 @@
 module.exports = {
 	// You can customize the language here or directly in the command files
-	onlyadmimodule.exports = {
-    // You can customize the language here or directly in the command files
-    onlyadminbox: {
-        description: "تشغيل/إيقاف وضع فقط المسؤولين",
-        guide: "   {pn} [تشغيل | إيقاف]",
-        text: {
-            turnedOn: "تم تشغيل وضع فقط المسؤولين لاستخدام الروبوت",
-            turnedOff: "تم إيقاف وضع فقط المسؤولين لاستخدام الروبوت",
-            syntaxError: "خطأ في الصياغة، استخدم {pn} تشغيل أو {pn} إيقاف فقط"
-        }
-    },
-    adduser: {
-        description: "إضافة مستخدم إلى محادثة المجموعة",
-        guide: "   {pn} [رابط الملف الشخصي | uid]",
-        text: {
-            alreadyInGroup: "موجود بالفعل في المجموعة",
-            successAdd: "- تم إضافة %1 أعضاء إلى المجموعة بنجاح",
-            failedAdd: "- فشل في إضافة %1 أعضاء إلى المجموعة",
-            approve: "- تمت إضافة %1 أعضاء إلى قائمة الموافقة",
-            invalidLink: "الرجاء إدخال رابط فيسبوك صالح",
-            cannotGetUid: "لا يمكن الحصول على uid لهذا المستخدم",
-            linkNotExist: "عنوان URL للملف الشخصي غير موجود",
-            cannotAddUser: "الروبوت محظور أو هذا المستخدم منع الغرباء من إضافتهم إلى المجموعة"
-        }
-    },
-    admin: {
-        description: "Add, remove, edit admin role",
+	onlyadminbox: {
+		description: "turn on/off only admin box can use bot",
+		guide: "   {pn} [on | off]",
+		text: {
+			turnedOn: "Turned on the mode only admin of group can use bot",
+			turnedOff: "Turned off the mode only admin of group can use bot",
+			syntaxError: "Syntax error, only use {pn} on or {pn} off"
+		}
+	},
+	adduser: {
+		description: "Add user to box chat of you",
+		guide: "   {pn} [link profile | uid]",
+		text: {
+			alreadyInGroup: "Already in group",
+			successAdd: "- Successfully added %1 members to the group",
+			failedAdd: "- Failed to add %1 members to the group",
+			approve: "- Added %1 members to the approval list",
+			invalidLink: "Please enter a valid facebook link",
+			cannotGetUid: "Cannot get uid of this user",
+			linkNotExist: "This profile url does not exist",
+			cannotAddUser: "Bot is blocked or this user blocked strangers from adding to the group"
+		}
+	},
+	admin: {
+		description: "Add, remove, edit admin role",
 		guide: "   {pn} [add | -a] <uid>: Add admin role for user\n\t  {pn} [remove | -r] <uid>: Remove admin role of user\n\t  {pn} [list | -l]: List all admins",
 		text: {
 			added: "✅ | Added admin role for %1 users:\n%2",

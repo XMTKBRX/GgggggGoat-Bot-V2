@@ -1,123 +1,123 @@
 module.exports = {
-	// You can customize the language here or directly in the command files
-	onlyadminbox: {
-		description: "turn on/off only admin box can use bot",
-		guide: "   {pn} [on | off]",
-		text: {
-			turnedOn: "Turned on the mode only admin of group can use bot",
-			turnedOff: "Turned off the mode only admin of group can use bot",
-			syntaxError: "Syntax error, only use {pn} on or {pn} off"
-		}
-	},
-	adduser: {
-		description: "Add user to box chat of you",
-		guide: "   {pn} [link profile | uid]",
-		text: {
-			alreadyInGroup: "Already in group",
-			successAdd: "- Successfully added %1 members to the group",
-			failedAdd: "- Failed to add %1 members to the group",
-			approve: "- Added %1 members to the approval list",
-			invalidLink: "Please enter a valid facebook link",
-			cannotGetUid: "Cannot get uid of this user",
-			linkNotExist: "This profile url does not exist",
-			cannotAddUser: "Bot is blocked or this user blocked strangers from adding to the group"
-		}
-	},
-	admin: {
-		description: "Add, remove, edit admin role",
-		guide: "   {pn} [add | -a] <uid>: Add admin role for user\n\t  {pn} [remove | -r] <uid>: Remove admin role of user\n\t  {pn} [list | -l]: List all admins",
-		text: {
-			added: "✅ | Added admin role for %1 users:\n%2",
-			alreadyAdmin: "\n⚠️ | %1 users already have admin role:\n%2",
-			missingIdAdd: "⚠️ | Please enter ID or tag user to add admin role",
-			removed: "✅ | Removed admin role of %1 users:\n%2",
-			notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
-			missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-			listAdmin: "👑 | List of admins:\n%1"
-		}
-	},
-	adminonly: {
-		description: "turn on/off only admin can use bot",
-		guide: "{pn} [on | off]",
-		text: {
-			turnedOn: "Turned on the mode only admin can use bot",
-			turnedOff: "Turned off the mode only admin can use bot",
-			syntaxError: "Syntax error, only use {pn} on or {pn} off"
-		}
-	},
-	all: {
-		description: "Tag all members in your group chat",
-		guide: "{pn} [content | empty]"
-	},
-	anime: {
-		description: "random anime image",
-		guide: "{pn} <endpoint>\n   List of endpoint: neko, kitsune, hug, pat, waifu, cry, kiss, slap, smug, punch",
-		text: {
-			loading: "Initializing image, please wait...",
-			error: "An error occurred, please try again later"
-		}
-	},
-	antichangeinfobox: {
-		description: "Turn on/off anti change info box",
-		guide: "   {pn} avt [on | off]: anti change avatar box chat\n   {pn} name [on | off]: anti change name box chat\n   {pn} theme [on | off]: anti change theme (chủ đề) box chat\n   {pn} emoji [on | off]: anti change emoji box chat",
-		text: {
-			antiChangeAvatarOn: "Turn on anti change avatar box chat",
-			antiChangeAvatarOff: "Turn off anti change avatar box chat",
-			missingAvt: "You have not set avatar for box chat",
-			antiChangeNameOn: "Turn on anti change name box chat",
-			antiChangeNameOff: "Turn off anti change name box chat",
-			antiChangeThemeOn: "Turn on anti change theme box chat",
-			antiChangeThemeOff: "Turn off anti change theme box chat",
-			antiChangeEmojiOn: "Turn on anti change emoji box chat",
-			antiChangeEmojiOff: "Turn off anti change emoji box chat",
-			antiChangeAvatarAlreadyOn: "Your box chat is currently on anti change avatar",
-			antiChangeNameAlreadyOn: "Your box chat is currently on anti change name",
-			antiChangeThemeAlreadyOn: "Your box chat is currently on anti change theme",
-			antiChangeEmojiAlreadyOn: "Your box chat is currently on anti change emoji"
-		}
-	},
-	appstore: {
-		description: "Search app on appstore",
-		text: {
-			missingKeyword: "You haven't entered any keyword",
-			noResult: "No result found for keyword %1"
-		}
-	},
-	autosetname: {
-		description: "Auto change nickname of new member",
-		guide: "   {pn} set <nickname>: use to set config to auto change nickname, with some shortcuts:\n   + {userName}: name of new member\n   + {userID}: member id\n   Example:\n    {pn} set {userName} 🚀\n\n   {pn} [on | off]: use to turn on/off this feature\n\n   {pn} [view | info]: show current config",
-		text: {
-			missingConfig: "Please enter the required configuration",
-			configSuccess: "The configuration has been set successfully",
-			currentConfig: "The current autoSetName configuration in your chat group is:\n%1",
-			notSetConfig: "Your group has not set the autoSetName configuration",
-			syntaxError: "Syntax error, only \"{pn} on\" or \"{pn} off\" can be used",
-			turnOnSuccess: "The autoSetName feature has been turned on",
-			turnOffSuccess: "The autoSetName feature has been turned off",
-			error: "An error occurred while using the autoSetName feature, try turning off the invite link feature in the group and try again later"
-		}
-	},
-	avatar: {
-		description: "create anime avatar with signature",
-		guide: "{p}{n} <character id or character name> | <background text> | <signature> | <background color name or hex color>\n{p}{n} help: view how to use this command",
-		text: {
-			initImage: "Initializing image, please wait...",
-			invalidCharacter: "Currently there are only %1 characters on the system, please enter a character id less than",
-			notFoundCharacter: "No character named %1 was found in the character list",
-			errorGetCharacter: "An error occurred while getting character data:\n%1: %2",
-			success: "✅ Your avatar\nCharacter: %1\nID: %2\nBackground text: %3\nSignature: %4\nColor: %5",
-			defaultColor: "default",
-			error: "An error occurred\n%1: %2"
-		}
-	},
-	badwords: {
-		description: "Turn on/off/add/remove bad words warning, if a member violates, he will be warned, the second time he will be kicked out of the chat box",
-		guide: "   {pn} add <words>: add banned words (you can add multiple words separated by commas \",\" or vertical bars \"|\")\n   {pn} delete <words>: delete banned words (you can delete multiple words separated by commas \",\" or vertical bars \"|\")\n   {pn} list <hide | leave blank>: turn off warning (add \"hide\" to hide banned words)\n   {pn} unwarn [<userID> | <@tag>]: remove 1 warning of 1 member\n   {pn} on: turn off warning\n   {pn} off: turn on warning",
-		text: {
-			onText: "on",
-			offText: "off",
-			onlyAdmin: "⚠️ | Only admins can add banned words to the list",
-			missingWords: "⚠️ | You haven't entered the banned words",
+    // يمكنك تخصيص اللغة هنا أو مباشرة في ملفات الأوامر
+    onlyadminbox: {
+        description: "تشغيل/إيقاف وضع فقط المسؤولين",
+        guide: "   {pn} [تشغيل | إيقاف]",
+        text: {
+            turnedOn: "تم تشغيل وضع فقط المسؤولين لاستخدام الروبوت",
+            turnedOff: "تم إيقاف وضع فقط المسؤولين لاستخدام الروبوت",
+            syntaxError: "خطأ في الصياغة، استخدم {pn} تشغيل أو {pn} إيقاف فقط"
+        }
+    },
+    adduser: {
+        description: "إضافة مستخدم إلى محادثة المجموعة",
+        guide: "   {pn} [رابط الملف الشخصي | uid]",
+        text: {
+            alreadyInGroup: "موجود بالفعل في المجموعة",
+            successAdd: "- تم إضافة %1 أعضاء إلى المجموعة بنجاح",
+            failedAdd: "- فشل في إضافة %1 أعضاء إلى المجموعة",
+            approve: "- تمت إضافة %1 أعضاء إلى قائمة الموافقة",
+            invalidLink: "الرجاء إدخال رابط فيسبوك صالح",
+            cannotGetUid: "لا يمكن الحصول على uid لهذا المستخدم",
+            linkNotExist: "عنوان URL للملف الشخصي غير موجود",
+            cannotAddUser: "الروبوت محظور أو هذا المستخدم منع الغرباء من إضافتهم إلى المجموعة"
+        }
+    },
+    admin: {
+        description: "إضافة، إزالة، تعديل دور المسؤول",
+        guide: "   {pn} [إضافة | -a] <uid>: إضافة دور المسؤول للمستخدم\n\t  {pn} [إزالة | -r] <uid>: إزالة دور المسؤول من المستخدم\n\t  {pn} [قائمة | -l]: قائمة بجميع المسؤولين",
+        text: {
+            added: "✅ | تم إضافة دور المسؤول لـ %1 مستخدمين:\n%2",
+            alreadyAdmin: "\n⚠️ | %1 مستخدمين لديهم دور المسؤول بالفعل:\n%2",
+            missingIdAdd: "⚠️ | الرجاء إدخال ID أو تمييز المستخدم لإضافة دور المسؤول",
+            removed: "✅ | تم إزالة دور المسؤول من %1 مستخدمين:\n%2",
+            notAdmin: "⚠️ | %1 مستخدمين ليس لديهم دور المسؤول:\n%2",
+            missingIdRemove: "⚠️ | الرجاء إدخال ID أو تمييز المستخدم لإزالة دور المسؤول",
+            listAdmin: "👑 | قائمة المسؤولين:\n%1"
+        }
+    },
+    adminonly: {
+        description: "تشغيل/إيقاف وضع فقط المسؤولين",
+        guide: "{pn} [تشغيل | إيقاف]",
+        text: {
+            turnedOn: "تم تشغيل وضع فقط المسؤولين لاستخدام الروبوت",
+            turnedOff: "تم إيقاف وضع فقط المسؤولين لاستخدام الروبوت",
+            syntaxError: "خطأ في الصياغة، استخدم {pn} تشغيل أو {pn} إيقاف فقط"
+        }
+    },
+    all: {
+        description: "تمييز جميع الأعضاء في محادثتك الجماعية",
+        guide: "{pn} [المحتوى | فارغ]"
+    },
+    anime: {
+        description: "صورة أنمي عشوائية",
+        guide: "{pn} <endpoint>\n   قائمة نقاط النهاية: neko, kitsune, hug, pat, waifu, cry, kiss, slap, smug, punch",
+        text: {
+            loading: "جارٍ تهيئة الصورة، الرجاء الانتظار...",
+            error: "حدث خطأ، الرجاء المحاولة مرة أخرى لاحقًا"
+        }
+    },
+    antichangeinfobox: {
+        description: "تشغيل/إيقاف منع تغيير معلومات المحادثة",
+        guide: "   {pn} الصورة الرمزية [تشغيل | إيقاف]: منع تغيير صورة المحادثة\n   {pn} الاسم [تشغيل | إيقاف]: منع تغيير اسم المحادثة\n   {pn} السمة [تشغيل | إيقاف]: منع تغيير سمة (الموضوع) المحادثة\n   {pn} الرموز التعبيرية [تشغيل | إيقاف]: منع تغيير الرموز التعبيرية للمحادثة",
+        text: {
+            antiChangeAvatarOn: "تم تشغيل منع تغيير صورة المحادثة",
+            antiChangeAvatarOff: "تم إيقاف منع تغيير صورة المحادثة",
+            missingAvt: "لم تقم بتعيين صورة للمحادثة",
+            antiChangeNameOn: "تم تشغيل منع تغيير اسم المحادثة",
+            antiChangeNameOff: "تم إيقاف منع تغيير اسم المحادثة",
+            antiChangeThemeOn: "تم تشغيل منع تغيير سمة المحادثة",
+            antiChangeThemeOff: "تم إيقاف منع تغيير سمة المحادثة",
+            antiChangeEmojiOn: "تم تشغيل منع تغيير الرموز التعبيرية للمحادثة",
+            antiChangeEmojiOff: "تم إيقاف منع تغيير الرموز التعبيرية للمحادثة",
+            antiChangeAvatarAlreadyOn: "محادثتك حالياً في وضع منع تغيير الصورة الرمزية",
+            antiChangeNameAlreadyOn: "محادثتك حالياً في وضع منع تغيير الاسم",
+            antiChangeThemeAlreadyOn: "محادثتك حالياً في وضع منع تغيير السمة",
+            antiChangeEmojiAlreadyOn: "محادثتك حالياً في وضع منع تغيير الرموز التعبيرية"
+        }
+    },
+    appstore: {
+        description: "البحث عن تطبيق في متجر التطبيقات",
+        text: {
+            missingKeyword: "لم تقم بإدخال أي كلمة مفتاحية",
+            noResult: "لم يتم العثور على نتائج للكلمة المفتاحية %1"
+        }
+    },
+    autosetname: {
+        description: "تغيير تلقائي للقب العضو الجديد",
+        guide: "   {pn} تعيين <اللقب>: استخدم لتعيين تكوين لتغيير اللقب تلقائيًا، مع بعض الاختصارات:\n   + {userName}: اسم العضو الجديد\n   + {userID}: معرف العضو\n   مثال:\n    {pn} تعيين {userName} 🚀\n\n   {pn} [تشغيل | إيقاف]: استخدم لتشغيل/إيقاف هذه الميزة\n\n   {pn} [عرض | معلومات]: عرض التكوين الحالي",
+        text: {
+            missingConfig: "الرجاء إدخال التكوين المطلوب",
+            configSuccess: "تم تعيين التكوين بنجاح",
+            currentConfig: "تكوين تغيير الاسم التلقائي الحالي في مجموعتك:\n%1",
+            notSetConfig: "لم تقم مجموعتك بتعيين تكوين تغيير الاسم التلقائي",
+            syntaxError: "خطأ في الصياغة، استخدم \"{pn} تشغيل\" أو \"{pn} إيقاف\" فقط",
+            turnOnSuccess: "تم تشغيل ميزة تغيير الاسم التلقائي",
+            turnOffSuccess: "تم إيقاف ميزة تغيير الاسم التلقائي",
+            error: "حدث خطأ أثناء استخدام ميزة تغيير الاسم التلقائي، حاول إيقاف تشغيل ميزة رابط الدعوة في المجموعة وحاول مرة أخرى لاحقًا"
+        }
+    },
+    avatar: {
+        description: "إنشاء صورة أنمي مع توقيع",
+        guide: "{p}{n} <معرف الشخصية أو اسم الشخصية> | <نص الخلفية> | <التوقيع> | <اسم لون الخلفية أو كود اللون>",
+        text: {
+            initImage: "جارٍ تهيئة الصورة، الرجاء الانتظار...",
+            invalidCharacter: "حاليًا يوجد فقط %1 شخصيات في النظام، الرجاء إدخال معرف شخصية أقل من",
+            notFoundCharacter: "لم يتم العثور على شخصية باسم %1 في قائمة الشخصيات",
+            errorGetCharacter: "حدث خطأ أثناء الحصول على بيانات الشخصية:\n%1: %2",
+            success: "✅ صورتك الرمزية\nالشخصية: %1\nID: %2\nنص الخلفية: %3\nالتوقيع: %4\nاللون: %5",
+            defaultColor: "افتراضي",
+            error: "حدث خطأ\n%1: %2"
+        }
+    },
+    badwords: {
+        description: "تشغيل/إيقاف/إضافة/إزالة تحذير الكلمات المحظورة، إذا انتهك أحد الأعضاء سيتم تحذيره، في المرة الثانية سيتم طرده من المحادثة",
+        guide: "   {pn} إضافة <كلمات>: إضافة كلمات محظورة (يمكنك إضافة عدة كلمات مفصولة بفواصل \",\" أو شرطات عمودية \"|\")\n   {pn} حذف <كلمات>: حذف كلمات محظورة (يمكنك حذف عدة كلمات مفصولة بفواصل \",\" أو شرطات عمودية \"|\")\n   {pn} قائمة <إخفاء | اترك فارغ>: إيقاف التحذير (أضف \"إخفاء\" لإخفاء الكلمات المحظورة)\n   {pn} إزالة التحذير [<userID> | <@tag>]: إزالة تحذير واحد لعضو واحد\n   {pn} تشغيل: تشغيل التحذير\n   {pn} إيقاف: إيقاف التحذير",
+        text: {
+            onText: "تشغيل",
+            offText: "إيقاف",
+            onlyAdmin: "⚠️ | عذرًا، فقط المسؤولين يمكنهم استخدام هذه الميزة", 
+	  missingWords: "⚠️ | You haven't entered the banned words",
 			addedSuccess: "✅ | Added %1 banned words to the list",
 			alreadyExist: "❌ | %1 banned words already exist in the list before: %2",
 			tooShort: "⚠️ | %1 banned words cannot be added to the list because they are shorter than 2 characters: %2",
